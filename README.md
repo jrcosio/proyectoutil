@@ -4,8 +4,6 @@
 [![Firebase](https://img.shields.io/badge/Firebase-FFCA28?logo=firebase&logoColor=black)](https://firebase.google.com/)
 [![Platform](https://img.shields.io/badge/Platform-Android%20|%20iOS%20|%20Web%20|%20Windows%20|%20macOS%20|%20Linux-lightgrey.svg)](https://flutter.dev/)
 
-Una aplicación Flutter multiplataforma diseñada para facilitar proyectos solidarios y de ayuda comunitaria.
-
 ## 📋 Descripción
 
 Proyecto Solidario Útil es una aplicación móvil que busca hacer mas facil el día a día a las personas con discapacidad cognitiva.
