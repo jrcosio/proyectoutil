@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:proyectoutil/screen/home/homescreen.dart';
+import 'package:proyectoutil/screen/login/loginscreen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -8,12 +8,11 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Proyecto Util',
-      home: const HomeScreen(),
+      home: const LoginScreen(),
     );
   }
 }
