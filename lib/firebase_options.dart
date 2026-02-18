@@ -63,6 +63,7 @@ class DefaultFirebaseOptions {
     messagingSenderId: '1060043769633',
     projectId: 'proyecto-util',
     storageBucket: 'proyecto-util.firebasestorage.app',
+    iosClientId: '1060043769633-4f6huj0jilhgpsu89sn8pu8boaq2kks9.apps.googleusercontent.com',
     iosBundleId: 'es.jrblanco.proyectoutil',
   );
 
