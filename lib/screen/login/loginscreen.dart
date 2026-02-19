@@ -56,54 +56,73 @@ class _LoginScreenState extends State<LoginScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Image.asset(
-              'assets/logos/logoutils_v2.webp',
-              width: 250,
-              height: 250,
-              fit: BoxFit.contain,
-            ),
-            Text(
-              'Útil',
-              style: TextStyle(
-                fontSize: 80,
-                fontWeight: FontWeight.bold,
-                fontFamily: 'Roboto',
-                color: const Color.fromARGB(255, 9, 166, 214),
+      body: SafeArea(
+        child: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              const Spacer(),
+              Image.asset(
+                'assets/logos/logoutils_v2.webp',
+                width: 250,
+                height: 250,
+                fit: BoxFit.contain,
               ),
-            ),
-            const SizedBox(height: 40),
-            _isLoading
-                ? const CircularProgressIndicator()
-                : FilledButton(
-                    onPressed: _handleGoogleSignIn,
-                    style: FilledButton.styleFrom(
-                      fixedSize: const Size(240, 80),
-                    ),
-                    child: Row(
-                      children: [
-                        Image.asset(
-                          'assets/iconos/google.webp',
-                          width: 48,
-                          height: 48,
-                          fit: BoxFit.contain,
-                        ),
-                        const SizedBox(width: 10),
-                        const Text(
-                          'ENTRAR',
-                          style: TextStyle(
-                            fontSize: 28,
-                            fontWeight: FontWeight.bold,
-                            fontFamily: 'Roboto',
+              Text(
+                'Útil',
+                style: TextStyle(
+                  fontSize: 80,
+                  fontWeight: FontWeight.bold,
+                  fontFamily: 'Roboto',
+                  color: const Color.fromARGB(255, 9, 166, 214),
+                ),
+              ),
+              const SizedBox(height: 40),
+              _isLoading
+                  ? const CircularProgressIndicator()
+                  : FilledButton(
+                      onPressed: _handleGoogleSignIn,
+                      style: FilledButton.styleFrom(
+                        fixedSize: const Size(240, 80),
+                      ),
+                      child: Row(
+                        children: [
+                          Image.asset(
+                            'assets/iconos/google.webp',
+                            width: 48,
+                            height: 48,
+                            fit: BoxFit.contain,
                           ),
-                        ),
-                      ],
+                          const SizedBox(width: 10),
+                          const Text(
+                            'ENTRAR',
+                            style: TextStyle(
+                              fontSize: 28,
+                              fontWeight: FontWeight.bold,
+                              fontFamily: 'Roboto',
+                            ),
+                          ),
+                        ],
+                      ),
                     ),
-                  ),
-          ],
+              const Spacer(),
+              const Text(
+                'Desarrollado por',
+                style: TextStyle(
+                  fontSize: 16,
+                  fontFamily: 'Roboto',
+                  color: Colors.grey,
+                ),
+              ),
+
+              Image.asset(
+                'assets/logos/solidarios.webp',
+                height: 40,
+                fit: BoxFit.contain,
+              ),
+              //const SizedBox(height: 20),
+            ],
+          ),
         ),
       ),
     );
